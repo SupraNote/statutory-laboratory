@@ -1,0 +1,37 @@
+
+
+[data-block-scope="0"],
+[data-block-scope="1"],
+[data-block-scope="2"],
+[data-block-scope="3"],
+[data-block-scope="4"],
+[data-block-scope="5"],
+[data-block-scope="6"] {
+  text-indent: 0.25in;
+}
+
+
+
+
+body {
+  text-indent:0.25in;
+  & [data-block-scope="0"] {margin-left:0.00in;}
+  & [data-block-scope="1"] {margin-left:0.25in;}
+  & [data-block-scope="2"] {margin-left:0.50in;}
+  & [data-block-scope="3"] {margin-left:0.75in;}
+  & [data-block-scope="4"] {margin-left:1.00in;}
+  & [data-block-scope="5"] {margin-left:1.25in;}
+  & [data-block-scope="6"] {margin-left:1.50in;}
+}
+
+.FlushText {
+  text-indent:0.0in;
+  &[data-block-scope="0"] {margin-left:0.00in;}
+  &[data-block-scope="1"] {margin-left:0.25in;}
+  &[data-block-scope="2"] {margin-left:0.50in;}
+  &[data-block-scope="3"] {margin-left:0.75in;}
+  &[data-block-scope="4"] {margin-left:1.00in;}
+  &[data-block-scope="5"] {margin-left:1.25in;}
+  &[data-block-scope="6"] {margin-left:1.50in;}
+  
+}
