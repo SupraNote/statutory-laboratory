@@ -1,17 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
     <title>[Act] v[#]</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../style/stat-v1.css" type="text/css" hreflang="en-US" />
+    <link rel="next" href="" type="text/html" hreflang="en-US" />
+    <link rel="prev" href="" type="text/html" hreflang="en-US" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../scripts/show-diffs.js"></script>
     <script src="../../scripts/hide-diffs.js"></script>
   </head>
 
-  <body>
-    <p style="text-align:center">[[Act] v[#].]</p>
-    <p style="text-align:center">[As Amended Through Laws [Year], LB [#].]</p>
-    <p style="text-align:center">[Effective <time datetime="YYYY-MM-DD">[Month] [Day], [Year]</time>. <i>See</i> &sect;&nbsp;[#].]</p>
+  <body class="StatutoryCodification">
+    <header>
+      <p class="version-number">[Act] v[#].</p>
+      <p class="amended-through">As Amended Through Laws [Year], LB [#].</p>
+      <p class="effective-date">Effective <time datetime="YYYY-MM-DD">MMMM dd, yyyy</time>. <i>See</i> &sect;&nbsp;[#].</p>
+      <p class="buttons">
+        <button class="show">Show diffs</button>
+        <button class="hide">Hide diffs</button>
+      </p>
+      <details id="context">
+        <summary>Context</summary>
+        <ul>
+          <li>Chapter [#]. [name]
+            <ul>
+              <li>Article [#]. []
+                <ul>
+                  <li>([]) [], </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+    </header>
+    <main>
+      <section id="">
+        <div id="#-###_heading">
+          <h1>
+            <span class="designator-value"></span>
+            <span class="catchline"></span>
+          </h1>
+        </div>
+        <div id="#-###_content">
+          <p class="content"></p>
+        </div>
+        <div id="#-###_notes">
+          <div id="#-###_source">
+            <details>
+              <summary>Source</summary>
+              <p>
+                <cite></cite>
+              </p>
+            </details>
+          </div>
+          <div id="#-###_xrefs">
+            <details>
+              <summary>Cross-references</summary>
+              <p></p>
+            </details>
+          </div>
+          <div id="#-###_cases">
+            <details>
+              <summary>Notes of Decisions</summary>
+              <p></p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
