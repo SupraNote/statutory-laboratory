@@ -19,6 +19,8 @@
     </header>
     <main class="era0">
       <p class="enactingFormula">Be it enacted by the people of the State of Nebraska,</p>
+      
+      <!-- If the provision amends an existing statute, then utilize the following pattern -->
       <section id="s1">
         <div id="s1_chapeau">
           <p>
@@ -28,9 +30,38 @@
           </p>
         </div>
         <div id="s1_content">
-          
+          <section id="{section-number}">
+            <div id="{section-number}_heading">
+              <h1>
+                <span class="designator-value"></span>
+              </h1>
+            </div>
+            <div id="{section-number}_content">
+              <p id="{subsection-number}">
+                <span class="designator-value"></span>
+                <span class="content"></span>
+              </p>
+            </div>
+          </section>
         </div>
       </section>
+
+      <!-- If the provision enacts a brand new provision, then utilize the following pattern -->
+
+      <section id="s2">
+        <div id="s2_heading">
+          <h1>
+            <span class="designator-value"></span>
+          </h1>
+        </div>
+        <div id="s2_content">
+          <p id="{subsection-number}">
+            <span class="designator-value"></span>
+            <span class="content"></span>
+          </p>
+        </div>
+      </section>
+
     </main>
   </body>
 </html>
