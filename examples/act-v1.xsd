@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  
+
+  <!-- SIMPLE ELEMENTS -->
+  <xs:element name="grammar" type="grammarinfo" />
+  <xs:element name="designatorLabel" type="xs:string" />
+  <xs:element name="designatorValue" type="xs:string" />
+  <xs:element name="catchline" type="xs:string" />
+  
+  <xs:complexType name="grammarinfo">
+    <xs:attribute name="role" type="xs:string" />
+  </xs:complexType>
+
+
+
+  <!-- Defining attribute value restrictions for <grammar> element -->
+  <xs:simpleType name="grammarType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="proviso" />
+      <xs:enumeration value="catchall" />
+      <xs:enumeration value="prepositiveModifier" />
+      <xs:enumeration value="postpositiveModifier" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- COMPLETE ELEMENTS -->
+  <xs:element name="act" type="acttype" />
+  <xs:element name="section" type="sectiontype" />
+  <xs:element name="heading" type="headingtype" />
+  <xs:element name="content" type="contenttype" />
+  
+
+  <xs:complexType name="headingtype" mixed="true">
+    <xs:sequence>
+      <xs:element ref="designatorLabel" maxOccurs="1" />
+      <xs:element ref="designatorValue" maxOccurs="1" />
+      <xs:element ref="catchline" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="act">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="section">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="heading">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="designatorLabel" type="xs:string" />
+                    <xs:element name="designatorValue" type="xs:string" />
+                    <xs:element name="catchline" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

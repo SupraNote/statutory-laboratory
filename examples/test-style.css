@@ -1,0 +1,140 @@
+ul {
+  list-style-type:none;
+  margin: 0in;
+  padding: 0in;  
+}
+
+ul > li {
+  text-indent:0.25in;
+}
+
+li.flushText {
+  text-indent:0in;
+}
+
+li li {
+  padding-top:12pt;
+  /* padding-bottom:12pt; */
+}
+
+
+ul ul {
+  padding-left:0.25in;
+  text-indent:0.25in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  font-size: 12pt;
+}
+
+/* DIFFS */
+body.StatutoryCodification ins {
+  background-color: white;
+  text-decoration: none;
+}
+body.StatutoryCodification del {
+  display: none;
+  background-color: pink;
+  text-decoration: line-through;
+}
+.moved-from {
+  text-decoration-style: double;
+  text-decoration-line: line-through;
+  background-color: #FCFBB7;
+}
+.moved-to {
+  text-decoration-style: double;
+  text-decoration-line: underline;
+  background-color: #FCFBB7;
+}
+
+
+/* HEADER */
+
+body.StatutoryCodification > header  {
+  & > 
+  p.version-number, 
+  p.amended-through, 
+  p.effective-date, 
+  p.buttons {
+    text-align:center;
+  }
+
+  /*
+  & >
+  p.version-number::before,
+  p.amended-through::before,
+  p.effective-date::before {
+    content:"[";
+  }
+    */
+
+  & > p.version-number, p.amended-through, p.effective-date {
+    &::before {
+      content:"[";
+    }
+    &::after {
+      content:"]";
+    }
+  }
+}
+
+/*
+body.StatutoryCodification > header > p.version-number,
+body.StatutoryCodification > header > p.amended-through,
+body.StatutoryCodification > header > p.effective-date,
+body.StatutoryCodification > header > p.buttons {
+  text-align: center;
+}
+*/
+
+/*
+body.StatutoryCodification > header > p.version-number::before,
+body.StatutoryCodification > header > p.amended-through::before,
+body.StatutoryCodification > header > p.effective-date::before {
+  content: "[";
+}
+
+body.StatutoryCodification > header > p.version-number::after,
+body.StatutoryCodification > header > p.amended-through::after,
+body.StatutoryCodification > header > p.effective-date::after {
+  content: "]";
+}
+*/
+
+
+/* BUTTONS */
+nav ul,
+nav ol {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0in;
+}
+nav li {
+  display: inline-block;
+}
+
+
+
+details[id="context"] > summary,
+details[id="cited-by"] > summary {
+  font-style:italic;
+}
+details[id="context"] ul,
+details[id="cited-by"] ul {
+  list-style:none;
+  font-size:10pt;
+}
+
+section > div[id$="_heading"] > h1 > span.designatorValue::after {
+  content: ".";
+}
+
+div[id$="_source"] > details > summary,
+div[id$="_xrefs"] > details > summary,
+div[id$="_decisions"] > details > summary, 
+div[id$="_annotations"] > details > summary,
+div[id$="_operative-date"] > details > summary {
+  font-style:italic;
+}

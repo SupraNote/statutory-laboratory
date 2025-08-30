@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style-v3.xsl" type="text/xsl"?>
+
+<!-- <act>Hello</act> -->
+
+
+
+<act book="StatutoryCodification">
+  <header>
+    <version>Resilient Soils and Water Quality Act v1.</version>
+    <amendedThrough>As Amended through laws 2022, LB925.</amendedThrough>
+    <effectiveDate>Effective <time datetime="2022-07-01">July 1, 2022</time>.</effectiveDate>
+  </header>
+  <main>
+    <section id="2-405">
+      <heading>
+        <designatorValue>2-405</designatorValue>
+        <catchline>Resilient Soils and Water Quality Act, how cited.</catchline>
+      </heading>
+      <content>
+        
+      </content>
+    </section>
+  </main>
+  
+</act>
+

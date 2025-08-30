@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="xml-style.css"?>
+
+<!-- 
+  Interpretive Markup
+-->
+
+<act book="StatutoryCodification">
+  <header>
+    <version />
+    <amendedThrough />
+    <effectiveDate />
+    <buttons>
+      <button class="show">Show diffs</button>
+      <button class="hide">Hide diffs</button>
+    </buttons>
+  </header>
+  <section>
+    <heading>
+      <designatorValue>84-029</designatorValue>
+      <catchline>Terms, defined.</catchline>
+    </heading>
+    <content format="blockEnumeratedList" type="definedTermSet">
+      <chapeau>For purposes of the Administrative Procedure Act:</chapeau>
+      <subsection>
+        <designatorValue>(1)</designatorValue>
+        <term>Agency</term>
+        <verb>shall mean</verb>
+        <definition>
+          each board, commission, department, officer, division, or other administrative office or unit of the state government authorized by law to make rules and regulations, except the Adjutant General's office as provided in Chapter 55, the courts including the Nebraska Workers' Compensation Court, the Commission of Industrial Relations, the Legislature, and the Secretary of State with respect to the duties imposed by the act;
+          
+          <list format="inline or block" exclusivity="conjunctive or disjunctive">
+            <lead-in></lead-in>
+            <item></item>
+            <flush-text></flush-text>
+          </list>
+        </definition>
+      </subsection>
+      <grammar>
+        <proviso />
+        <exclusion />
+        <prepositiveModifier />
+        <postpositiveModifier />
+        <catchall />
+      </grammar>
+      <subsection>
+        <designatorValue>(2)</designatorValue>
+        <statutoryTerm>Rule or regulation</statutoryTerm>
+        <statutoryVerb>shall mean</statutoryVerb>
+      </subsection>
+    </content>
+  </section>
+
+  <!-- 
+    <section> is the basic building block of a statute.
+    A <section> 
+  -->
+  <section>
+
+  </section>
+</act>

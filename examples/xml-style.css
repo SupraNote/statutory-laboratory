@@ -1,0 +1,31 @@
+act {
+  display:block;
+}
+
+section {
+  display:block;
+}
+
+heading {
+  display:block;
+  font-weight:bold;
+}
+
+heading > designatorValue::after {
+  content:".";
+}
+
+content {
+  display:block;
+}
+
+[flushText="yes"] {
+  display:block;
+  text-indent:0.25in;
+}
+
+
+indentedText {
+  display:block;
+  text-indent:0.25in;
+}

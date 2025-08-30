@@ -1,0 +1,15 @@
+<!--
+  + (declares minimum one occurence of an element)
+  * (declares zero or more occurrences of an element)
+  ? (declares zero or one occurrences of an element)
+  (element1|element2) (declares either/or content)
+-->
+
+<!ELEMENT act (section+)>
+<!ELEMENT section (heading+, content+, notes*)>
+<!ELEMENT heading (designatorLabel, designatorValue, catchline)>
+<!ELEMENT designatorLabel (#PCDATA)>
+<!ELEMENT designatorValue (#PCDATA)>
+<!ELEMENT catchline (#PCDATA)>
+<!ELEMENT content ((chapeau*|subsection*))>
+<!ELEMENT notes (#PCDATA)>
