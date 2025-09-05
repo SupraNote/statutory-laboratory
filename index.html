@@ -1,254 +1,118 @@
-<html>
+<html lang="en-US">
   <head>
-    <link rel="stylesheet" type="text/css" href="../style/general-v1.css">
-    <script type="text/javascript" src="scripts/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="tablesorter-master/dist/js/jquery.tablesorter.combined.js"></script>
-    <script id="js">
-      $(function() {
-        $("table").tablesorter({
-          theme : 'blue',
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function() {
-        $("#myInput").on("keyup", function() {
-          var value = $(this).val().toLowerCase();
-          $("#TableBody tr").filter(function() {
-           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-          });
-        });
-      });
-    </script>
+    <link rel="stylesheet" type="text/css" href="../style/general-v1.css" hreflang="en-US" />
   </head>
   <body>
-    <h1></h1>
-    <table id="StatuteTable" class="tablesorter">
-      <caption>Named Acts</caption>
-      <thead>
-        <tr>
-          <th class="col0">ID</th>
-          <th class="col1">Agency</th>
-          <th class="col2">Type</th>
-          <th class="col3">Act Name</th>
-          <th class="col4">Start</th>
-          <th class="col5">End</th>
-          <th class="col6">Misc.</th>
-          <th class="col7">Termination</th>
-        </tr>
-      </thead>
-      <tbody id="TableBody">
-        <tr>
-          <td class="col0">1</td>
-          <td class="col1 dnr">DNR</td>
-          <td class="col2"></td>
-          <td class="col3"><a href="acts/rswqa/toc.html">Resilient Soils and Water Quality Act</a></td>
-          <td class="col4" nowrap>2-405</td>
-          <td class="col5" nowrap>2-409</td>
-          <td class="col6"></td>
-          <td class="col7">N/A</td>
-        </tr>
-        <tr>
-          <td class="col0">2</td>
-          <td class="col1 dnr">DNR</td>
-          <td class="col2"></td>
-          <td class="col3">Nitrogen Reduction Incentive Act</td>
-          <td class="col4" nowrap>2-411</td>
-          <td class="col5" nowrap>2-417</td>
-          <td class="col6"></td>
-          <td class="col7"><time datetime="2029-12-31">2029-12-31</time></td>
-        </tr>
-        <tr>
-          <td class="col0">3</td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3">Noxious Weed Control Act</td>
-          <td class="col4">2-2945.01</td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-        <tr>
-          <td class="col0"></td>
-          <td class="col1"></td>
-          <td class="col2"></td>
-          <td class="col3"></td>
-          <td class="col4"></td>
-          <td class="col5"></td>
-          <td class="col6"></td>
-          <td class="col7"></td>
-        </tr>
-      </tbody>
-    </table>
+    <main>
+      <section>
+        <p>
+          <ul>
+            <li>Administrative Procedure Act (APA).</li>
+            <li>Nebraska Environmental Protection Act (<a href="acts/nepa/toc.html">NEPA</a>).</li>
+            <li>Nebraska Water Pollution Control Act (<a href="acts/nwpca/toc.html">NWPCA</a>).</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h1>A Brief Note About Effective Dates</h1>
+        <p>Article III, Section 27, of the Nebraska Constitution provides:
+          <blockquote>No act shall take effect until three calendar months after the adjournment of the session at which it passed, unless in case of emergency, which is expressed in the preamble or body of the act, the Legislature shall by a vote of two-thirds of all the members elected otherwise direct. All laws shall be published within sixty days after the adjournment of each session and distributed among the several counties in such manner as the Legislature may provide.</blockquote>
+        </p>
+        <p>Question: What exactly is a <q>calendar month</q>? 
+          <ul style="list-style-type:disc;">
+            <li>Is it 30 days?</li> 
+            <li>Is it merely the corresponding day in a succeeding month? (<i>E.g.</i>, January 15 to February 15)?</li>
+            <li>What if a legislative session adjourns March 31? June does not have 31 days, so what is the last day of the third calendar month?</li>
+          </ul>
+        </p>
+        <p>The Nebraska Supreme Court answered this question in <cite><i>McGinn</i> v. <i>State</i>, 46 Neb. 427 (1895).</cite>  Prior to 1893, the criminal code of Nebraska mandated a death sentence for those convicted of first-degree murder. <cite>Consolidated Statutes of Nebraska, &sect;&nbsp;5579 (1891).</cite> In 1893, the Legislature amended this provision to provide for a sentence of either death or life imprisonment, the decision of which was left to the discretion of the jury. <cite>Nebraska Session Laws 1893, c.&nbsp;44, &sect;&nbsp;1 p.&nbsp;386.</cite> The law explicitly provided that the amendment <q>shall not be construed to apply to any offences committed prior to the taking effect of this act, .&nbsp;.&nbsp;.</q> <cite><i>Id.</i>, &sect;&nbsp;2.</cite> The legislative session at which the amendment was enacted adjourned April 8, 1893. <cite><i>McGinn</i>, 46 Neb. at 435.</cite></p>
+          
+        <p>On July 29, 1893, Barney McGinn <q>feloniously and maliciously wound[ed], with intent to kill,</q> one Edward McKenna. <cite><i>Id.</i> at 434.</cite> Two days later, on July 31, 1893, McKenna died as a result of the injuries sustained. <cite><i>Id.</i></cite> The State of Nebraska prosecuted McGinn under &sect;&nbsp;5579. However, the State contended that McGinn should be prosecuted under the pre-amendment version of &sect;&nbsp;5579 because the amendment had not yet taken effect at the time of the crime. The District Court agreed. Upon the jury returning a guilty verdict, the judge&mdash;not the jury&mdash;imposed the mandatory sentence of death provided for under the pre-amendment version of &sect;&nbsp;5579. McGinn appealed the conviction, arguing, among other things, that the District Court erred in allowing McGinn to be prosecuted under the pre-amendment version of &sect;&nbsp;5579.</p>
+        
+        <p>Now, you might be asking <q>how in the world could the time between April 8, 1863, and July 29, 1893&mdash;a span of 112 days&mdash;not be considered three calendar months?</q> In 1891, the Nebraska Attorney General interpreted the relvant constitutional provision with respect to the effective dates of the laws enacted during the twenty-second Legislative Assembly. That Legislative Assembly adjourned April 4, 1891. <i>See</i> Letter from George H. Hastings, Nebraska Attorney General, to John C. Allen, Nebraska Secretary of State (Apr. 30, 1891), <i>reprinted in</i> Biennial Report of the Attorney General to the Governor <a href="https://govdocs.nebraska.gov/epubs/J2000/A001-189192.pdf#page=59">61</a> (1892) [<a href="ia601309.us.archive.org/3/items/rep-neb-atty-gen/1891-1892.pdf#page=59">archived</a>]. According to Attorney General Hastings:
+          <blockquote>
+            <p class="first-line-indent">The word calendar means a recorded division of time into periods; a register of the year; an almanac. The word month means the twelfth part of a calendar year. A calendar month is a solar month as it stands in the almanac. I take it, the constitution makers did not desire the laws to take effect in ninety days, or they would have so stated. They in their wisdom, elected the time to be three calendar months. This, in my judgment, precludes us from considering any part or parts of calendar months. The laws take effect at the expiration of three full calendar months. The legislature adjourned <time datetime="1891-04-04">April 4</time>.</p>
+            <p class="first-line-indent">I have examined this question with much care, and find no authority which will justify you in doing other than excluding the part of the calendar month known as April. The laws passed by the Twenty-second Legislative Assembly without an emergency clause do not take effect until <time datetime="1891-08-01">August 1, 1891</time>.</p>
+          </blockquote>
+        </p>
+        <p class="flushtext"><cite><i>Id.</i>, at 61&ndash;62.</cite> Thus, applying Attorney General Hastings&rsquo;s understanding of the term <q>calendar month,</q> the amendment to &sect;&nbsp;5579 became effective <time datetime="1893-08-01">August 1, 1893</time>.</p>
+        <p>The Nebraska Supreme Court disagreed with this construction of Art. III, &sect;&nbsp;27. After surveying the authorities, the Court held:
+          <blockquote>
+            <p class="flushtext">The natural and necessary deduction from the authorities above cited is that the term <q>calendar month,</q> as used in the constitution, had, prior to the adoption of that instrument in 1875, received a definite interpretation, and is to be computed not by counting days but by looking at the calendar, and terminates with the day numerically corresponding to the day of its commencement, less one, in the following month; and such is evidently the sense in which it is employed in the constitution.</p>
+            <p>The authorities are not, as will be observed, harmonious upon the question whether the first day&mdash;in this instance, the day of the adjournment of the legislature&mdash;is to be included in the prescribed period. Indeed, it is clear that section 895 of the Code of Civil Procedure, providing that <q>the time within which an act is to be done as herein provided shall be computed by excluding the first day and including the last,</q> was intended to establish a uniform rule, applicable to the construction of statutes as well as to matters of practice. (<cite><i>Monell v. Terwilliger</i>, 8 Neb., 360</cite>; <cite><i>McGavock v. Pollack</i>, 13 Neb., 535</cite>; <cite><i>Spencer v. Haug</i>, 45 Minn., 231</cite>.) It follows that the period of three calendar months after the adjournment of the legislature of 1893 termianted at <time datetime="1893-07-08T00:00">midnight of the 8th day of July of that year</time>.&nbsp;.&nbsp;.&nbsp;.</p>
+          </blockquote>
+        </p>
+        <p class="flushtext"><cite></cite></p>
+      </section>
+      <section>
+        <h1>Style of Legislative Sessions and Bills</h1>
+        <p>Legislative sessions have been styled differently over the years.</p>
+
+        <h2>1866&ndash;1970</h2>
+        <p>From 1866 to 1970, each meeting of the Legislature was referred to as a <q>session,</q> and each session was assigned a number (<i>e.g.</i>, <q>Sixtieth Session</q>). During this period, the Legislature held regular sessions in each odd-numbered year. A session held outside of the regular session schedule was referred to as an <q>Extraordinary Session.</q></p>
+        <p>During this period, Legislative Bills did not contain underscores to indicate inserted text and strikethroughs to indicate deleted text. <i>E.g.</i>, Laws 1969, <a href="https://www.nebraskalegislature.gov/FloorDocs/80/PDF/Slip/LB393.pdf">LB393</a>.</p>
+        <p>In the November 1970 general election, the voters approved a <a href="https://www.nebraskalegislature.gov/FloorDocs/80/PDF/Slip/LB527.pdf">constitutional amendment</a> that provided for annual sessions of the Legislature. The amendment took effect in 1971.</p>
+
+        <h2>1971&ndash;Present</h2>
+        <p>From 1971 to the present, every two year biennium is referred to as a numbered Legislature, with meetings occurring in the odd-numbered year being referred to as the <q>First Session</q> and meetings occurring in the even-numbered year being referred to as the <q>Second Session.</q> A session occurring outside of the regularly scheduled sessions is referred to as a <q>Special Session.</q></p>
+        <p>Thus, here is how the style changed from before and after the 1970 constitutional amendment:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Session Start</th>
+              <th>Session End</th>
+              <th>Session Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="1967-01-03">1967-01-03</time></td>
+              <td><time datetime="1967-07-22">1967-07-22</time></td>
+              <td>Seventy-Seventh Session</td>
+            </tr>
+            <tr>
+              <td><time datetime="1968-01-03">1968-01-03</time></td>
+              <td><time datetime="1968-01-11">1968-01-11</time></td>
+              <td>Seventy-Eighth (Extraordinary) Session</td>
+            </tr>
+            <tr>
+              <td><time datetime="1968-12-09">1968-12-09</time></td>
+              <td><time datetime="1968-12-16">1968-12-16</time></td>
+              <td>Seventy-Ninth (Extraordinary) Session</td>
+            </tr>
+            <tr>
+              <td><time datetime="1969-01-07">1969-01-07</time></td>
+              <td><time datetime="1969-09-24">1969-09-24</time></td>
+              <td>Eightieth Session</td>
+            </tr>
+            <tr>
+              <td><time datetime="1970-06-09">1970-06-09</time></td>
+              <td><time datetime="1970-06-16">1970-06-16</time></td>
+              <td>Eighty-First (Extraordinary) Session</td>
+            </tr>
+            <tr>
+              <td><time datetime="1971-01-05">1971-01-05</time></td>
+              <td><time datetime="1971-05-26">1971-05-26</time></td>
+              <td>Eighty-Second Legislature, First Session</td>
+            </tr>
+            <tr>
+              <td><time datetime="1972-01-04">1972-01-04</time></td>
+              <td><time datetime="1972-04-05">1972-04-05</time></td>
+              <td>Eighty-Second Legislature, Second Session</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align:center;"><b>*&emsp;&emsp;*&emsp;&emsp;*&emsp;&emsp;*&emsp;&emsp;*</b></td>
+            </tr>
+            <tr>
+              <td><time datetime="1975-10-22">1975-10-22</time></td>
+              <td><time datetime="1975-11-11">1975-11-11</time></td>
+              <td>Eighty-Fourth Legislature, First Special Session</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Since 1971, Legislative Bills have contained underscores to indicate inserted text and strikethroughs to indicate deleted text. However, only in 1971, Legislative Bills that enacted brand new statutory provisions did not contain underscores to indicate new text. After 1971, such underscores were present. <i>Compare</i> Laws 1971, <a href="https://www.nebraskalegislature.gov/FloorDocs/82/PDF/Slip/LB939.pdf">LB939</a>, <i>with</i> Laws 1972, <a href="https://www.nebraskalegislature.gov/FloorDocs/82/PDF/Slip/LB1032.pdf">LB1032</a>.</p>
+      </section>
+      
+    </main>
   </body>
 </html>
