@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style/general-v1.css">
+    <script type="text/javascript" src="scripts/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="tablesorter-master/dist/js/jquery.tablesorter.combined.js"></script>
+    <script id="js">
+      $(function() {
+        $("table").tablesorter({
+          theme : 'blue',
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#TableBody tr").filter(function() {
+           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1></h1>
+    <table id="StatuteTable" class="tablesorter">
+      <caption>Named Acts</caption>
+      <thead>
+        <tr>
+          <th class="col0">ID</th>
+          <th class="col1">Agency</th>
+          <th class="col2">Type</th>
+          <th class="col3">Act Name</th>
+          <th class="col4">Start</th>
+          <th class="col5">End</th>
+          <th class="col6">Misc.</th>
+          <th class="col7">Termination</th>
+        </tr>
+      </thead>
+      <tbody id="TableBody">
+        <tr>
+          <td class="col0">1</td>
+          <td class="col1 dnr">DNR</td>
+          <td class="col2"></td>
+          <td class="col3"><a href="acts/rswqa/toc.html">Resilient Soils and Water Quality Act</a></td>
+          <td class="col4" nowrap>2-405</td>
+          <td class="col5" nowrap>2-409</td>
+          <td class="col6"></td>
+          <td class="col7">N/A</td>
+        </tr>
+        <tr>
+          <td class="col0">2</td>
+          <td class="col1 dnr">DNR</td>
+          <td class="col2"></td>
+          <td class="col3">Nitrogen Reduction Incentive Act</td>
+          <td class="col4" nowrap>2-411</td>
+          <td class="col5" nowrap>2-417</td>
+          <td class="col6"></td>
+          <td class="col7"><time datetime="2029-12-31">2029-12-31</time></td>
+        </tr>
+        <tr>
+          <td class="col0">3</td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3">Noxious Weed Control Act</td>
+          <td class="col4">2-2945.01</td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+        <tr>
+          <td class="col0"></td>
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"></td>
+          <td class="col5"></td>
+          <td class="col6"></td>
+          <td class="col7"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
